@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Sign in Form like Google</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <!-- Bootstrap Core CSS -->
+    <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+    .login-form {
+        width: 500px;
+    	margin: 30px auto;
+    }
+    .login-form h2 {
+        font-size: 19px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .login-form form {
+        background: #f7f7f7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        margin-bottom: 10px;
+		padding: 30px;
+    }
+    .login-form .avatar {
+        width: 90px;
+        margin-bottom: 20px;
+    }
+    .login-form .form-control, .login-form .btn {
+        min-height: 38px;
+    }
+    .login-form input[type="email"] {
+        border-radius: 2px 2px 0 0;
+    }
+    .login-form input[type="password"] {
+        border-radius: 0 0 2px 2px;
+        margin-top: -1px;
+    }
+	.login-form input.form-control:focus {
+        position: relative;
+        z-index: 2;
+    }
+    .login-form .btn {
+        font-size: 15px;
+		font-weight: bold;
+		border-radius: 2px;
+    }
+</style>
+</head>
+<body style="background-color:lightgray">
+ <!-- Navigation -->
+<div class="login-form">
+    <h2>Sign up</h2>
+    <form action="/examples/actions/confirmation.php" method="post">
+       <div class="form-group">
+              <label for="InputEmail">이메일 주소</label>
+              <input type="email" class="form-control" id="InputEmail" placeholder="이메일 주소">
+            </div>
+            <div class="form-group">
+              <label for="InputPassword1">비밀번호</label>
+              <input type="password" class="form-control" id="InputPassword1" placeholder="비밀번호">
+            </div>
+            <div class="form-group">
+              <label for="InputPassword2">비밀번호 확인</label>
+              <input type="password" class="form-control" id="InputPassword2" placeholder="비밀번호 확인">
+            </div>
+            <div class="form-group">
+              <label for="username">이름</label>
+              <input type="text" class="form-control" id="username" placeholder="이름을 입력해 주세요">
+            </div>
+            <div class="form-group">
+              <label for="username">휴대폰 번호</label>
+                <input type="tel" class="form-control" id="username" placeholder="- 없이 입력해 주세요">
+            </div>
+            <div class="form-group">
+              <label for="username">주소 입력</label>
+                <input type="text" class="form-control" id="username" placeholder="주소입력">
+            </div>
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-info">회원가입<i class="fa fa-check spaceLeft"></i></button>
+              <button type="submit" class="btn btn-warning">가입취소<i class="fa fa-times spaceLeft"></i></button>
+            </div>
+    </form>
+</div>
+</body>
+</html>

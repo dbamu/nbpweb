@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Sign in Form like Google</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <!-- Bootstrap Core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+    .login-form {
+        width: 500px;
+    	margin: 30px auto;
+    }
+    .login-form h2 {
+        font-size: 19px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .login-form form {
+        background: #f7f7f7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        margin-bottom: 10px;
+		padding: 30px;
+    }
+    .login-form .avatar {
+        width: 90px;
+        margin-bottom: 20px;
+    }
+    .login-form .form-control, .login-form .btn {
+        min-height: 38px;
+    }
+    .login-form input[type="email"] {
+        border-radius: 2px 2px 0 0;
+    }
+    .login-form input[type="password"] {
+        border-radius: 0 0 2px 2px;
+        margin-top: -1px;
+    }
+	.login-form input.form-control:focus {
+        position: relative;
+        z-index: 2;
+    }
+    .login-form .btn {
+        font-size: 15px;
+		font-weight: bold;
+		border-radius: 2px;
+    }
+</style>
+</head>
+<body style="background-color:lightgray">
+ <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">NBP Internship</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Introduce <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">류수운</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">이지은</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">박재형</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">김대호</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">이상무</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="join.html">join us</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="login.html" >Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<div class="login-form">
+    <h2>Sign in to Your Account</h2>
+    <form action="/examples/actions/confirmation.php" method="post">
+        <div class="text-center">
+            <img src="../static/img/avatar.png" class="img-circle avatar" alt="Avatar">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email" required="required">
+            <input type="password" class="form-control" placeholder="Password" required="required">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+        </div>
+        <div class="clearfix">
+            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+            <a href="#" class="pull-right">Forgot Password?</a>
+        </div>
+    </form>
+    <p class="text-center"><a href="join.html">Create an Account</a></p>
+</div>
+</body>
+</html>                            
